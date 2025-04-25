@@ -7,6 +7,7 @@ import twitter from "../src/assets/twitter.png";
 import tiktok from "../src/assets/tiktok.png";
 import linkedin from "../src/assets/linkedin.png";
 import gmail from "../src/assets/gmail.png";
+import Service from "./Service";
 
 const Home: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -14,7 +15,7 @@ const Home: React.FC = () => {
   const [modalTitle, setModalTitle] = useState("");
 
   const handleButtonClick = (contentType: string) => {
-    let content = "";
+    let content:any;
     let title = "";
     switch (contentType) {
       case "BIO":
@@ -27,7 +28,7 @@ const Home: React.FC = () => {
         break;
       case "SERVICES":
         title = "SERVICES"
-        content = "Quincy offers services such as writing mentorship, public speaking, and brand consultation.";
+        content = <Service/>
         break;
     }
     setModalTitle(title);
@@ -60,8 +61,8 @@ const Home: React.FC = () => {
 
 
       {modalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50 p-4">
-          <div className="bg-white rounded-2xl p-6 max-w-md w-full text-center space-y-4 shadow-xl">
+        <div className="fixed scroll-auto inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50 p-4">
+          <div className="bg-white rounded-2xl p-6 max-w-xl w-full text-center space-y-4 shadow-xl">
             <h2 className="text-2xl font-semibold text-black">{modalTitle}</h2>
             <p className="text-gray-700">{modalContent}</p>
             <button

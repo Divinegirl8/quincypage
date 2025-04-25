@@ -1,3 +1,4 @@
+import BookOpening from './BookOpening'
 import Home from './Home'
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
 
   return (
     <>
+      <BookOpening />
       <Home/>
     </>
   )
