@@ -1,14 +1,15 @@
 import { useState } from "react";
-import quincyLogo from "../src/assets/quincy.png";
-import Button from "./Button";
-import facebook from "../src/assets/icons/fb.png";
-import instagram from "../src/assets/icons/ig.png";
-import twitter from "../src/assets/icons/twitter.png";
-import tiktok from "../src/assets/icons/tiktok.png";
-import linkedin from "../src/assets/icons/linkedin.png";
-import gmail from "../src/assets/icons/gmail.png";
-import Service from "./Service";
-import Book from "./Book";
+import quincyLogo from "../assets/quincy.png";
+import Button from "../Button";
+import facebook from "../assets/icons/fb.png";
+import instagram from "../assets/icons/ig.png";
+import twitter from "../assets/icons/twitter.png";
+import tiktok from "../assets/icons/tiktok.png";
+import linkedin from "../assets/icons/linkedin.png";
+import gmail from "../assets/icons/gmail.png";
+import Service from "../Service";
+import Book from "../Book";
+import style from "../Home/index.module.css"
 
 const Home: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -41,7 +42,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <h1 className="text-center mt-10 xl:text-4xl text-[35px] font-bold">QUINCY TOBENNA ALAGBU</h1>
+      <h1 className={`text-center mt-10 xl:text-4xl text-[35px] font-bold ${style.name}`} >QUINCY TOBENNA ALAGBU</h1>
       <div className="flex flex-col justify-center items-center md:mt-14 mt-5 relative">
         <img src={quincyLogo} alt="quincy logo" className="rounded-full md:w-72 md:h-72 w-60 h-60 relative z-10" />
         <div className="w-[95%] sm:w-[90%] md:w-[80%] lg:w-[650px] border border-violet-100 absolute md:top-[12rem] top-[7rem] z-0 rounded-lg pt-[9rem] pb-5 flex flex-col items-center space-y-5">

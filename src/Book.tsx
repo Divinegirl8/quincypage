@@ -8,7 +8,7 @@ import box from '../src/assets/books/BOXED FOR IMPACT_20250418_125248_0001.png';
 import pace from '../src/assets/books/HOW TO PACE YOUR STORIES LIKE A PRO_20250418_125059_0000.png'
 
 const descriptionTxt1 = "Click to get Ebook";
-const descriptionTxt2 = "Click to get HardCopy";
+const descriptionTxt2 = "Click to get Hard Copy";
 
 const books = [
   {
