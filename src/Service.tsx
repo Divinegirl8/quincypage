@@ -65,7 +65,7 @@ const Service = () => {
             className="p-5 bg-white border border-black rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
           >
             <h2 className="font-semibold text-lg text-black mb-2">{service.title}</h2>
-            <p className="text-gray-800 text-sm leading-relaxed">{service.description}</p>
+            <p className="text-gray-800 text-sm leading-relaxed "  style={{ textAlign: "justify" }}>{service.description}</p>
           </div>
         ))}
       </div>

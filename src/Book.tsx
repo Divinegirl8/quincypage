@@ -48,7 +48,7 @@ const books = [
     linkE: "https://selar.com/e6d709",
   },
   {
-    title: "BOXED FOR IMPACT",
+    title: "BOXED FOR IMPACT!",
     img: box,
     descriptionE: descriptionTxt1,
     linkE: "https://selar.com/1514xy",
