@@ -1,5 +1,5 @@
 import { useState } from "react";
-import quincyLogo from "../assets/quincy.jpeg";
+import quincyLogo from "../assets/bena.png";
 import Button from "../Button";
 import facebook from "../assets/icons/fb.png";
 import instagram from "../assets/icons/ig.png";
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
         content = <Bio/>;
         break;
       case "BOOKS":
-        title = "BOOKS"
+        title = "PUBLICATIONS"
         content = <Book/>
         break;
       case "SERVICES":
@@ -46,17 +46,17 @@ const Home: React.FC = () => {
     <>
       <h1 className={`text-center mt-10 xl:text-4xl text-[35px] font-bold ${style.name}`} >QUINCY TOBENNA ALAGBU</h1>
       <div className="flex flex-col justify-center items-center md:mt-14 mt-5 relative">
-      <div className="w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden flex justify-center items-center relative z-10">
+      <div className="w-60 h-60 md:w-72 md:h-72  rounded-full overflow-hidden flex justify-center items-center relative z-10"  style={{ background: 'linear-gradient(to bottom, #454255, #23202B)' }}>
   <img
     src={quincyLogo}
     alt="quincy logo"
     className="w-full h-full object-cover"
+    style={{ transform: 'translateX(16px)' }}
   />
 </div>
-
         <div className="w-[95%] sm:w-[90%] md:w-[80%] lg:w-[650px] border border-violet-100 absolute md:top-[12rem] top-[7rem] z-0 rounded-lg pt-[9rem] pb-5 flex flex-col items-center space-y-5">
           <Button text="BIO" onClick={() => handleButtonClick("BIO")} />
-          <Button text="BOOKS" onClick={() => handleButtonClick("BOOKS")} />
+          <Button text="PUBLICATIONS" onClick={() => handleButtonClick("BOOKS")} />
           <Button text="KEY SKILLS & COMPETENCIES" onClick={() => handleButtonClick("SERVICES")} />
 
           <div className="flex flex-row gap-5 mt-5">
