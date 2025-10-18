@@ -1,60 +1,40 @@
 const Service = () => {
     const services = [
       {
-        title: "Persuasive Copywriting",
+        title: "Strategic Communication, Brand Messaging & Audience Insight",
         description:
-          "I craft compelling, results-driven copy that captivates readers and motivates them to take action—whether it’s making a purchase, signing up, or engaging with a brand.",
+        "I craft clear, persuasive messages that resonate deeply with the right audiences. By understanding what people value and respond to, I help brands and individuals communicate with clarity, authenticity, and emotional impact."
       },
       {
-        title: "Website & Landing Page Copy",
+        title: "Professional Copywriting & Marketing Content Development",
         description:
-          "I write clear, persuasive, and high-converting website and landing page copy that enhances brand identity, builds trust, and drives engagement or sales.",
+        "I write attention-grabbing, action-driven copy for websites, ads, and campaigns that inspire audiences to engage, subscribe, or buy, turning ideas into measurable results for both businesses and personal brands."
       },
       {
-        title: "Compelling Product Description Writing",
+        title: "Corporate & Creative Storytelling",
         description:
-          "I transform product features into irresistible benefits with engaging, conversion-focused descriptions that highlight uniqueness and persuade customers to buy.",
+        "I transform facts, data, and ideas into powerful, human-centered stories that inform, inspire, and leave a lasting impression, whether for corporate brands, professionals, or creative projects."
       },
       {
-        title: "Engaging Caption & Social Media Writing",
+        title: "Product & Service Positioning",
         description:
-          "I create scroll-stopping, brand-aligned social media captions that spark engagement, drive interaction, and strengthen online presence.",
+        "I strategically present products and services in ways that highlight their true value, emphasize what sets them apart, and connect with customers or audiences on both rational and emotional levels."
       },
       {
-        title: "Book Endorsements & Reviews",
+        title: "Editing, Proofreading & Quality Assurance",
         description:
-          "I provide insightful and persuasive book endorsements and reviews that highlight a book’s strengths, credibility, and appeal to its target audience.",
+        "I polish content to perfection by refining tone, clarity, grammar, and flow, ensuring every piece is professional, consistent, and aligned with the brand or individual’s authentic voice and purpose."
       },
       {
-        title: "Professional Editing & Proofreading",
+        title: "Ghostwriting (Fiction, Nonfiction, Business, Memoirs, Biographies, etc.) & Publishing Support",
         description:
-          "I refine content to perfection by eliminating errors, enhancing readability, and ensuring clarity, consistency, and a polished final product.",
+        "I bring clients’ ideas and stories to life through expertly ghostwritten books, articles, and manuscripts that reflect their unique voice. I also provide publishing guidance, from structure and editing to final preparation for release."
       },
       {
-        title: "Expert Dialogue Formatting",
+        title: "Creative Ideation, Problem Solving & Brand Strategy",
         description:
-          "I structure and refine dialogue for seamless readability, ensuring it flows naturally, follows industry standards, and enhances character authenticity.",
-      },
-      {
-        title: "Narrative Crafting & Fiction Writing",
-        description:
-          "I develop compelling, immersive stories with strong character arcs, gripping plots, and emotionally resonant narratives that leave a lasting impact.",
-      },
-      {
-        title: "High-Impact Ghostwriting",
-        description:
-          "I bring ideas to life by writing books, articles, and content that reflect the client’s voice, vision, and message—while maintaining complete confidentiality.",
-      },
-      {
-        title: "Creative & Strategic Writing Solutions",
-        description:
-          "I blend creativity with strategy to craft writing that not only entertains and engages but also serves a clear purpose, whether in storytelling, branding, or content marketing.",
-      },
-      {
-        title: "Creative Ideation & Brand Strategy",
-        description:
-          "I generate innovative content ideas and strategic solutions that help businesses and brands refine their messaging, strengthen their identity, and engage their audience effectively.",
-      },
+        "I develop innovative ideas and strategic solutions that help brands and individuals grow, communicate effectively, and stand out in competitive spaces by blending creativity with purpose and direction"
+      }
     ];
   
     return (

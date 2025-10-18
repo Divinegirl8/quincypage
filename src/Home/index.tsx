@@ -1,5 +1,5 @@
 import { useState } from "react";
-import quincyLogo from "../assets/quincy.png";
+import quincyLogo from "../assets/quincy.jpeg";
 import Button from "../Button";
 import facebook from "../assets/icons/fb.png";
 import instagram from "../assets/icons/ig.png";
@@ -14,11 +14,12 @@ import Bio from "../Bio";
 
 const Home: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState("");
+  const [modalContent, setModalContent] = useState<React.ReactNode>("");
   const [modalTitle, setModalTitle] = useState("");
 
   const handleButtonClick = (contentType: string) => {
-    let content:any;
+    // let content:any;
+    let content: React.ReactNode = "";
     let title = "";
     switch (contentType) {
       case "BIO":
@@ -30,7 +31,7 @@ const Home: React.FC = () => {
         content = <Book/>
         break;
       case "SERVICES":
-        title = "SERVICES"
+        title = "KEY SKILLS & COMPETENCIES"
         content = <Service/>
         break;
     }
@@ -45,11 +46,18 @@ const Home: React.FC = () => {
     <>
       <h1 className={`text-center mt-10 xl:text-4xl text-[35px] font-bold ${style.name}`} >QUINCY TOBENNA ALAGBU</h1>
       <div className="flex flex-col justify-center items-center md:mt-14 mt-5 relative">
-        <img src={quincyLogo} alt="quincy logo" className="rounded-full md:w-72 md:h-72 w-60 h-60 relative z-10" />
+      <div className="w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden flex justify-center items-center relative z-10">
+  <img
+    src={quincyLogo}
+    alt="quincy logo"
+    className="w-full h-full object-cover"
+  />
+</div>
+
         <div className="w-[95%] sm:w-[90%] md:w-[80%] lg:w-[650px] border border-violet-100 absolute md:top-[12rem] top-[7rem] z-0 rounded-lg pt-[9rem] pb-5 flex flex-col items-center space-y-5">
           <Button text="BIO" onClick={() => handleButtonClick("BIO")} />
           <Button text="BOOKS" onClick={() => handleButtonClick("BOOKS")} />
-          <Button text="SERVICES" onClick={() => handleButtonClick("SERVICES")} />
+          <Button text="KEY SKILLS & COMPETENCIES" onClick={() => handleButtonClick("SERVICES")} />
 
           <div className="flex flex-row gap-5 mt-5">
             <a href="https://www.instagram.com/thetobenquincy" target="_blank"><img src={instagram} alt="ig" className="w-10 h-10" /></a>
@@ -86,7 +94,7 @@ const Home: React.FC = () => {
       <div className="sticky bottom-0 bg-white p-4 border-t border-gray-200">
         <button
           onClick={closeModal}
-          className="bg-black text-white px-6 py-2 rounded-full w-full"
+          className="bg-black text-white px-6 py-2 rounded-full w-full cursor-pointer"
         >
           Close
         </button>
