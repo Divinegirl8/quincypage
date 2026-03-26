@@ -6,6 +6,9 @@ import craft from "../src/assets/books/HOW TO CRAFT KILLER OFFERS_20250418_12524
 import charging from "../src/assets/books/THE ART OF CHARGING MORE_20250418_125247_0000.png";
 import box from "../src/assets/books/BOXED FOR IMPACT_20250418_125248_0001.png";
 import pace from "../src/assets/books/HOW TO PACE YOUR STORIES LIKE A PRO_20250418_125059_0000.png";
+import mind from "../src/assets/books/MIND MOVES.png";
+import teach from "../src/assets/books/WHAT YOU MUST TEACH YOUR CHILD_20260227_131019_0000.png";
+
 
 const descriptionTxt1 = "Click to get Ebook";
 const descriptionTxt2 = "Click to get Hard Copy";
@@ -58,6 +61,18 @@ const books = [
     img: pace,
     descriptionE: descriptionTxt1,
     linkE: "https://selar.com/6455ys",
+  },
+  {
+    title: "MIND MOVES THAT MAKE PEOPLE BUY",
+    img: mind,
+    descriptionE: descriptionTxt1,
+    linkE: "https://selar.com/69bm760wl9",
+  },
+  {
+    title: "WHAT YOU MUST TEACH YOUR CHILD",
+    img: teach,
+    descriptionE: descriptionTxt1,
+    linkE: "https://selar.com/74700klj6a",
   },
 ];
 
